@@ -1,0 +1,1 @@
+# donejs-shared-instance
