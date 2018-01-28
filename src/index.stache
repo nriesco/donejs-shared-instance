@@ -8,8 +8,14 @@
     <can-import from="~/info/" />
     <can-import from="~/home.component" />
 
+
+    <!-- <can-import from="bootstrap" /> -->
+    <can-import from="bootstrap/dist/css/bootstrap.css" />
+
+    <div class="container">
+      <br>
     <h1>{{message}}</h1>
-    Links: <a href="/home">Home</a> :: <a href="/info">Info</a><br>
+    <a href="/home">Home</a> :: <a href="/info">Info</a><br>
     <br>
 
     {{#switch page}}
@@ -21,6 +27,7 @@
       {{/case}}
         
     {{/switch}}
+  </div>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

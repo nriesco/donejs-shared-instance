@@ -1,8 +1,6 @@
-<div>
-  INFO component, private data: {{message}}<br>
-  <br>
-  INFO component, shared data: {{globalData.text}}<br>
-  <br>
-  Set the shared data here:
-  <input value:bind="globalData.text">
+<div class="alert alert-success" role="alert"> <strong>Info Component</strong><br><br> Message contains: {{message}}</div>
+
+<div class="alert alert-info" role="alert"> <strong>Shared Data</strong><br><br> Text contains: {{globalData.text}}
+  <BR><br><input class="form-control" value:bind="globalData.text">
+</div>
 </div>
