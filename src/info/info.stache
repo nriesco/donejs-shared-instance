@@ -1,0 +1,8 @@
+<div>
+  INFO component, private data: {{message}}<br>
+  <br>
+  INFO component, shared data: {{globalData.text}}<br>
+  <br>
+  Set the shared data here:
+  <input value:bind="globalData.text">
+</div>

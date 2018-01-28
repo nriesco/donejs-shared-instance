@@ -1,0 +1,27 @@
+<can-component tag="demo-home">
+  <style type="less">
+    display: block;
+
+    p { font-weight: bold; }
+  </style>
+  <view>
+    <div>
+      Home component, private data: {{message}}<br>
+      <br>
+      Home component, shared data: {{globalData.text}}<br>
+      <br>
+      Set the shared data here:
+      <input value:bind="globalData.text">
+    </div>
+  </view>
+  <script type="view-model">
+    import DefineMap from 'can-define/map/';
+    import SharedInstance from '~/sharedInstance';
+    export default DefineMap.extend({
+      message: {
+        value: 'This is home'
+      },
+      globalData: { value: SharedInstance }
+    });
+  </script>
+</can-component>
